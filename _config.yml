@@ -20,11 +20,12 @@
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Title
+title:                 블로그 개설 중...
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
+  블로그 개설 중...
   Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
   with a focus on personal sites that are meant to impress.
 
@@ -81,8 +82,8 @@ paginate_path:         /:num/
 # ---------------------------------------------------------------------------------------
 
 # This will use the gem `jekyll-theme-hydejack`, as defined in the sibling `Gemfile`.
-theme: jekyll-theme-hydejack
-
+# theme: jekyll-theme-hydejack # (수정) GitHub Pages build machine failed to find this theme, Change as below due to error
+remote_theme: qwtel/hydejack
 # You can uncomment `theme` above and replace it with `remote_theme` here iff you are using the 
 # `jekyll-remote-theme` plugin (which is the case when using the legacy GitHub Pages pipeline).
 # This will fetch the `v9` branch of the public Hydejack repository on GitHub.
@@ -335,6 +336,7 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
+  - jekyll-remote-theme
 
 
 # SEO Tag
